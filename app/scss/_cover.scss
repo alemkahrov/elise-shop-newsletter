@@ -1,0 +1,47 @@
+.cover {
+  position: relative;
+  z-index: 1;
+  background: url('/app/images/cover-bg_1.jpg');
+  min-height: 40rem;
+  padding: 2rem 0 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(#000, .4);
+    z-index: -1;
+  }
+}
+
+.cover__content {
+  color: $white;
+  margin: 2rem auto 0 auto;
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+
+    @media screen and (min-width: 480px) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 1.3rem;
+
+    @media screen and (min-width: 480px) {
+      line-height: 2;
+    }
+  }
+}
